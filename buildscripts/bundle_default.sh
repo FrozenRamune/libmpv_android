@@ -39,13 +39,13 @@ cd ../..
 
 mv prefix lib
 
-mv lib/arm64-v8a/usr/local/lib/*.so         lib/arm64-v8a/*.so
+mv lib/arm64-v8a/usr/local/lib/*.so         lib/arm64-v8a/
 zip -r default-arm64-v8a.jar                lib/arm64-v8a/*.so
-mv lib/armeabi-v7a/usr/local/lib/*.so       lib/armeabi-v7a/*.so
+mv lib/armeabi-v7a/usr/local/lib/*.so       lib/armeabi-v7a/
 zip -r default-armeabi-v7a.jar              lib/armeabi-v7a/*.so
-mv lib/x86/usr/local/lib/*.so               lib/x86/*.so
+mv lib/x86/usr/local/lib/*.so               lib/x86/
 zip -r default-x86.jar                      lib/x86/*.so
-mv lib/x86_64/usr/local/lib/*.so            lib/x86_64/*.so
+mv lib/x86_64/usr/local/lib/*.so            lib/x86_64/
 zip -r default-x86_64.jar                   lib/x86_64/*.so
 
 md5sum *.jar
